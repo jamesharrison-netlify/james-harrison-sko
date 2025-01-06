@@ -10,9 +10,9 @@ export default async (request, context) => {
             .on("#netlify-title", {
                 element: (element) => {
                     if (location) {
-                        element.setInnerContent(`Hello from Netlify! How's the weather in ${location}?`);
+                        element.setInnerContent(`Is it snowing in ${location}?`);
                     } else {
-                        element.setInnerContent(`Hello from Netlify!`);
+                        element.setInnerContent(`Is it snowing?`);
                     }
                 },
             })
